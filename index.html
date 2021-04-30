@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper Scissor</title>
-  </head>
-  <body>
-    <script src="script.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock Paper Scissor</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/f762ba1f03.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="game">
+    <header>
+      <h1>Rock Paper Scissors</h1>
+    </header>
+    <main>
+      <section class="computer">
+        <p>Computer</p>
+        <div class="weapon">
+          <button data-index="0">
+            <i class="far fa-hand-rock" aria-label="rock"></i>
+          </button>
+          <button data-index="1">
+            <i class="far fa-hand-paper" aria-label="paper"></i>
+          </button>
+          <button data-index="2">
+            <i class="far fa-hand-peace" aria-label="scissors"></i>
+          </button>
+        </div>
+      </section>
+      <section class="result">
+        <i class="fas fa-grin-stars"></i>
+        <button id="play">Play Again</button>
+      </section>
+      <section class="player">
+        <div class="weapon">
+          <button data-index="0">
+            <i class="far fa-hand-rock" aria-label="rock"></i>
+          </button>
+          <button data-index="1">
+            <i class="far fa-hand-paper" aria-label="paper"></i>
+          </button>
+          <button data-index="2">
+            <i class="far fa-hand-peace" aria-label="scissors"></i>
+          </button>
+        </div>
+        <p>You</p>
+      </section>
+    </main>
+    <footer>
+      <p>Computer</p>
+      <p id="scoreComputer">0</p>
+      <p>:</p>
+      <p id="scorePlayer">0</p>
+      <p>You</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>
